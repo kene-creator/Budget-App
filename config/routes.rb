@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   devise_for :users
   get 'entities/index'
@@ -6,6 +8,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  resources :entities, only: [:index, :new, :create, :destroy]
-  root "entities#index"
+  resources :entities, only: %i[index new create destroy]
+  root 'entities#index'
 end
