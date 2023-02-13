@@ -48,9 +48,9 @@ gem 'tailwindcss-rails'
 # Authorization with cancancan
 gem 'cancancan'
 
-# lint check
-gem 'rubocop'
-gem 'rubocop-rails'
+# # lint check
+# gem 'rubocop'
+# gem 'rubocop-rails'
 # Use Sass to process CSS
 # gem "sassc-rails"
 
