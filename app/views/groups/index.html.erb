@@ -1,6 +1,14 @@
 <div class="flex flex-col justify-center items-center w-full">
   <h1 class="font-bold text-4xl">Categories</h1>
-  <ul>
-  
+  <ul class="w-3/5 bg-slate-300 p-2 mt-6">
+  <% @groups.each do |group| %>
+  <li class="bg-white mb-4 shadow-sm 
+  rounded shadow-black p-2">
+  <div class="flex items-center justify-between">
+  <div class="w-10 h-10"><%= image_tag url_for(group.icon) %></div>
+  <p><%= group.name %></p>
+  </div>
+  </li>
+  <%end%>
   </ul>
 </div>
