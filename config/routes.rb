@@ -8,6 +8,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  resources :groups do
+    resources :entities
+  end
+  
   resources :entities, only: %i[index new create destroy]
   resources :groups, only: %i[index new create destroy]
   # root 'entities#index'
