@@ -7,6 +7,7 @@ class Ability
     # Define abilities for the user here. For example:
 
     return unless user.role == 'admin'
+
     can %i[create read update destroy], Group if user.role == 'admin'
     can %i[create read update destroy], Entity if user.role == 'admin'
     #
