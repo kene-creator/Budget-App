@@ -1,10 +1,9 @@
 <div class="flex flex-col justify-center items-center w-full bg-[#3678C2] h-full">
   <div class="flex flex-col justify-center items-center">
   <h1 class="font-bold text-4xl mt-4 text-white">Transaction</h1>
-    <% total_price = 0 %>
-  <%@entities.each do |entity|%>
-    <p class="text-white">Total Amout: $<%= total_price += entity.total_price %></p>
-  <%end%>
+ 
+<p class="text-white">Total Amount: $<%= @total_price %></p>
+ <div class="p-3"><%= link_to "Back", groups_path %></div>
   </div>
   <div class="w-full flex flex-col justify-center items-center bg-slate-100 p-2 ">
   <div class="flex justify-between items-center w-full">
@@ -21,6 +20,9 @@
   </li>
   <%end%>
   </ul>
+  <div class="mt-4 bg-[#5fb523] w-full flex justify-center items-center p-2">
+  <%= link_to 'Add a New Transaction', new_group_entity_path, class: 'bg-[#5fb523] p-2 w-[80%] border border-white text-white text-center' %>
+  </div>
   </div>
    
 </div>
