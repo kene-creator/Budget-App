@@ -3,6 +3,6 @@ class Group < ApplicationRecord
   has_many :entities
 
   def total_price
-  Entity.where(group_id: id).pluck(:amount).sum
+    Entity.where(group_id: id).pluck(:amount).sum
   end
 end
