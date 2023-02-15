@@ -12,7 +12,7 @@ class GroupsController < ApplicationController
     @group.user = current_user
 
     if @group.save
-      redirect_to groups_path, notice: "Group was successfully created."
+      redirect_to groups_path, notice: 'Group was successfully created.'
     else
       render :new
     end

@@ -20,7 +20,7 @@ class EntitiesController < ApplicationController
     @entity.user = current_user
 
     if @entity.save
-      redirect_to group_entities_path(@group), notice: "Transaction was successfully created."
+      redirect_to group_entities_path(@group), notice: 'Transaction was successfully created.'
     else
       render :new
     end
