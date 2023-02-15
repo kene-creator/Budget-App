@@ -1,10 +1,23 @@
-<div>
-  <h1 class="font-bold text-4xl">Transaction</h1>
-  <div>
-  <ul>
+<div class="flex flex-col justify-center items-center w-full bg-[#3678C2] h-full">
+  <div class="flex flex-col justify-center items-center">
+  <h1 class="font-bold text-4xl mt-4 text-white">Transaction</h1>
+    <% total_price = 0 %>
+  <%@entities.each do |entity|%>
+    <p class="text-white">Total Amout: $<%= total_price += entity.total_price %></p>
+  <%end%>
+  </div>
+  <div class="w-full flex flex-col justify-center items-center bg-slate-100 p-2 ">
+  <div class="flex justify-between items-center w-full">
+  <p>Transaction type</p>
+  <p>Amount</p>
+  <p>Username</p>
+  </div>
+  <ul class="w-full flex flex-col justify-center items-center">
   <% @entities.each do |entity| %>
-  <li>
-  <%= entity.name %>
+  <li class="bg-white p-2 shadow shadow-black w-[90%] flex justify-between items-center">
+  <p><%= entity.name %></p>
+  <p>$<%= entity.amount %></p>
+  <p><%= entity.user.name %></p>
   </li>
   <%end%>
   </ul>
