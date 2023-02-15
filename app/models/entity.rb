@@ -3,5 +3,6 @@ class Entity < ApplicationRecord
   has_many :groups
 
   validates :name, presence: true
+  validates :amount, presence: true, numericality: { greater_than: 0 }
 
 end
