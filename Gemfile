@@ -90,3 +90,4 @@ gem 'dotenv-rails', '~> 2.8'
 gem 'letter_opener', '~> 1.8'
 
 gem 'factory_bot_rails'
+
