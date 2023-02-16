@@ -1,5 +1,5 @@
 class Group < ApplicationRecord
-    include ImageUploader::Attachment(:icon)
+  include ImageUploader::Attachment(:icon)
 
   belongs_to :user, class_name: 'User'
   has_many :entities, dependent: :destroy
