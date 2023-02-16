@@ -8,8 +8,10 @@
       <div>
         <%= f.text_field :name, placeholder: "Enter Name", class: 'mb-4' %>
       </div>
+    
       <div>
-        <%= f.text_field :icon, placeholder: "Enter icon link" %>
+      <%= f.label :icon %>
+        <%= f.file_field :icon %>
       </div>
       <div class='flex'>
       <div class='m-auto bg-blue-300 p-3 rounded-md text-white mt-4'>
