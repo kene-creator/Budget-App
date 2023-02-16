@@ -8,6 +8,7 @@ Bundler.require(*Rails.groups)
 
 module BudgetApp
   class Application < Rails::Application
+    config.secret_key_base = 'blipblapblup'
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
