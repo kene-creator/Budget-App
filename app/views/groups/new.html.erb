@@ -8,9 +8,14 @@
       <div>
         <%= f.text_field :name, placeholder: "Enter Name", class: 'mb-4' %>
       </div>
-      <div>
-        <%= f.text_field :icon, placeholder: "Enter icon link" %>
-      </div>
+    
+      <div class="mt-4">
+  <%= f.label :icon, class: "block font-medium text-sm text-gray-700" do %>
+    Add your icon
+  <% end %>
+  <%= f.file_field :icon, class: "mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" %>
+</div>
+
       <div class='flex'>
       <div class='m-auto bg-blue-300 p-3 rounded-md text-white mt-4'>
         <%= f.submit "Save", class: 'cursor-pointer' %>

@@ -10,6 +10,7 @@ class GroupsController < ApplicationController
   def create
     @group = Group.new(group_params)
     @group.user = current_user
+    # @group.icon_data = params[:group][:icon_data]
 
     if @group.save
       redirect_to groups_path, notice: 'Group was successfully created.'
