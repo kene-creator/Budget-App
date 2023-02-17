@@ -30,8 +30,6 @@ After you're finished please remove all the comments and instructions!
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
-
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -60,11 +58,9 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Budget_App] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**[your_project__name]** is a...
+> Users can create and save and plan their budgets with this app
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -75,14 +71,15 @@ After you're finished please remove all the comments and instructions!
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/">Bootstrap</a></li>
+    <li><a href="https://www.javascript.com/">JavaScript</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="https://rubyonrails.org/">Ruby on rails</a></li>
   </ul>
 </details>
 
@@ -99,9 +96,9 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[authentication system to allow login and registration]**
+- **[list categories of items you spend on]**
+- **[list transactions for a specific category]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,9 +106,13 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
+### Project Presentation <a name="project-presentation"></a>
+
+- [Video](https://www.loom.com/share/e37c1880df5348268ffc49139cd847e0)
+
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [BudgetTracker](https://spyrex-budget.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
