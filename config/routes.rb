@@ -8,4 +8,6 @@ Rails.application.routes.draw do
 
   resources :entities, only: %i[index new create destroy]
   resources :groups, only: %i[index new create destroy]
+
+  get 'confirm_email/:token', to: 'users#confirm_email', as: 'confirm_email'
 end
