@@ -1,0 +1,25 @@
+ <div class="p-6 w-full flex-col items-center bg-[#3678C2]">
+  <%= notice %>
+    <div class='text-center p-2'>
+    <h2 class='m-auto font-bold text-white text-3xl'>Add a Category</h2>
+    </div>
+     <div class="p-3"><%= link_to "Back", groups_path %></div>
+    <%= form_with model: @group, url: groups_path, method: :post, class: 'flex justify-center items-center flex-col mt-8', local: true do |f| %>
+      <div>
+        <%= f.text_field :name, placeholder: "Enter Name", class: 'mb-4' %>
+      </div>
+    
+      <div class="mt-4">
+  <%= f.label :icon, class: "block font-medium text-sm text-gray-700" do %>
+    Add your icon
+  <% end %>
+  <%= f.file_field :icon, class: "mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" %>
+</div>
+
+      <div class='flex'>
+      <div class='m-auto bg-blue-300 p-3 rounded-md text-white mt-4'>
+        <%= f.submit "Save", class: 'cursor-pointer' %>
+      </div>
+      </div>
+    <% end %>
+  </div>

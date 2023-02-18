@@ -1,0 +1,25 @@
+<div class="flex flex-col justify-center items-center w-full bg-[#3678C2] h-full">
+  <h1 class="font-bold text-4xl text-white mt-4">Categories</h1>
+  <p class="p-3"><%= button_to "Log Out", destroy_user_session_path, method: :delete %></p>
+  <ul class="w-full bg-slate-300 p-2 mt-6">
+  <% @groups.each do |group| %>
+  <li class="bg-white mb-4 shadow-sm 
+  rounded shadow-black p-2">
+ <%= link_to group_entities_path(group) do %>
+  <div class="flex items-center justify-between">
+    <div class="w-16 h-16"><%= image_tag group.icon_url if group.icon %></div>
+    <div>
+      <p>Category: <%= group.name %></p>
+      <p>Name: <%= group.user.name %></p>
+      <p>Amount: $<%= group.total_price %></p>
+    </div>
+  </div>
+<% end %>
+
+  </li>
+  <%end%>
+  </ul>
+  <div class=" bg-[#5fb523] w-full flex justify-center items-center p-2">
+  <%= link_to 'Add a New Category', new_group_path, class: 'bg-[#5fb523] p-2 w-[80%] border border-white text-white text-center' %>
+  </div>
+</div>
